@@ -1,0 +1,224 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.project1 {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link);
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered);
+    }
+  }
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+.booklist {
+  color: purple;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.action {
+  display: flex;
+}
+
+.actionName {
+  color: purple;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  color: purple !important;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.addForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+  padding-top: 0.5px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: auto;
+}
+
+.addForm input {
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+}
+
+.addForm button {
+  padding: 5px 10px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addForm input,
+.addForm button {
+  box-sizing: border-box;
+}
+
+.addForm button:hover {
+  background-color: #3700b3;
+}
+
+.searchInput {
+  width: 200px !important;
+  max-width: 400px !important;
+  padding: 10px 15px !important;
+  font-size: 16px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  transition: all 0.3s ease !important;
+  height: auto !important;
+  margin-bottom: 20px !important;
+}
+
+.searchInput:focus {
+  border-color: #6200ea;
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+.searchInput::placeholder {
+  color: purple;
+  font-style: italic;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.buttonColorOut {
+  color: purple !important;
+  background-color: white !important;
+  border-color: purple !important;
+  margin-top: 40px !important;
+  margin-bottom: 30px !important;
+  margin-left: 40px !important;
+}
+
+.buttonColorOut:cover {
+  background-color: pink !important;
+}
+
+.buttonColor {
+  color: purple !important;
+  background-color: white !important;
+  border-color: purple !important;
+  margin-left: 4px;
+}
+
+.buttonColor:cover {
+  background-color: pink !important;
+}
+
+.textColor {
+  color: purple !important;
+}
+
+.pagination {
+  color: purple !important;
+  background-color: white !important;
+  margin: 16px;
+  border-color: purple;
+
+}
+
+:global {
+  .ant-form-item-required {
+    width: 80px;
+  }
+
+  .ant-input:focus {
+    border-color: #6200ea !important;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5) !important;
+  }
+
+  .ant-input-outlined:focus {
+    border-color: #6200ea !important;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5) !important;
+  }
+
+  .ant-form {
+    border-color: #6200ea !important;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5) !important;
+  }
+
+  .ant-btn {
+    box-shadow: pink !important;
+  }
+}
